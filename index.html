@@ -1,0 +1,49 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rock Paper Scissors Game</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Rock, Paper, Scissors</h1>
+    <main class="choice">
+      <section class="pchoice">
+        <h2>You choose . . .</h2>
+        <div class="images">
+          <div class="upperimg">
+            <i id="r" class="far fa-hand-rock" onclick="play('rock')"></i>
+          </div>
+          <div class="underimg">
+          <i id="p" class="far fa-hand-paper" onclick="play('paper')"></i>
+          <i id="s" class="far fa-hand-scissors" onclick="play('scissors')"></i>
+        </div>
+        </div>
+      </section>
+      <section class="ochoice">
+        <h2>Opponent chooses . . .</h2>
+        <i id="o" class="fas fa-question"></i>
+      </section>
+    </main>
+    <section class="scoreboard">
+      <h2 id="result">Result</h2>
+      <div id="play" class="score">
+        <p id="wins">0</p>
+        <p class="label">Wins</p>
+      </div>
+      <div id="neither" class="score">
+        <p id="ties">0</p>
+        <p class="label">Ties</p>
+      </div>
+      <div id="opp" class="score">
+        <p id="losses">0</p>
+        <p class="label">Losses</p>
+      </div>
+      <div class="reset">
+        <button onclick="reset()">Reset Score</button>
+      </div>
+    </section>
+  <script src="js/page.js"></script>
+  </body>
+</html>
